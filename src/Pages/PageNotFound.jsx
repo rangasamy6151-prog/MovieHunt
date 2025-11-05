@@ -6,7 +6,7 @@ export const PageNotFound = () => {
     <div className="container">
       <img src= {NotFound} className="img-fluid" />
       <p className="text-center">
-        <Link to= "/MovieHunt" className="btn btn-danger" >Goto Home Page</Link>
+        <Link to= "/" className="btn btn-danger" >Goto Home Page</Link>
       </p>
     </div>
   )

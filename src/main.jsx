@@ -6,7 +6,7 @@ import { ScrollTop } from "./Components/ScrollTop.jsx"
 
 createRoot(document.getElementById('root')).render(
   
-  <BrowserRouter>
+  <BrowserRouter basename="/MovieHunt" >
       <ScrollTop/>
       <App/>
   </BrowserRouter>

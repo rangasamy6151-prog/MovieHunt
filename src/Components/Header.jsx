@@ -7,8 +7,8 @@ export const Header = () => {
   const handleSearch = (e) => {
       e.preventDefault();
       const queryTerm = e.target.search.value;
-      e.target.reset;
-      return navigator(`./search?q=${queryTerm}`)
+      e.target.reset();
+      return navigator(`/search?q=${queryTerm}`)
   }
 
   return (
@@ -25,16 +25,16 @@ export const Header = () => {
           <div className="collapse navbar-collapse" id="menu" >
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/MovieHunt/">Home</NavLink>
+                <NavLink className="nav-link" to="/">Home</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/MovieHunt/movies/top">Top Rated</NavLink>
+                <NavLink className="nav-link" to="/movies/top">Top Rated</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/MovieHunt/movies/popular">Popular</NavLink>
+                <NavLink className="nav-link" to="/movies/popular">Popular</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/MovieHunt/movies/upcoming">Upcoming</NavLink>
+                <NavLink className="nav-link" to="/movies/upcoming">Upcoming</NavLink>
               </li>
             </ul>
             
