@@ -21,7 +21,7 @@ export const MovieList = ( {title, apiPath} ) => {
             <h3 className="text-primary">Welcome to CineVault</h3>
             <p className="lead">Discover movies you'll love with personalized suggestion, curated collections, a quick searches-your guide to finding great films</p>
             <button className="btn btn-primary" 
-            onClick={ () => {navigator("/movies/upcoming")}} >Explore Now
+            onClick={ () => {navigator("/MovieHunt/movies/upcoming")}} >Explore Now
             </button>
           </div>
         ) : ""}
